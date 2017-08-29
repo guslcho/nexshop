@@ -7,6 +7,6 @@ services:
   zuul-server:
     image: nexshop-zuul-server
     depends_on:
-     - eureka-server
+     - nexshop-eureka-server
     ports:
      - "9090:9090"
