@@ -1,11 +1,11 @@
 version: '3'
 services:
   eureka-server:
-    image: eureka-server
+    image: nexshop-eureka-server
     ports:
      - "8761:8761"
   zuul-server:
-    image: zuul-server
+    image: nexshop-zuul-server
     depends_on:
      - eureka-server
     ports:
